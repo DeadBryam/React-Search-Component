@@ -1,0 +1,23 @@
+.searchList {
+  width: 40vw;
+  background: #00000025;
+  margin: 20px;
+}
+
+.searchListCard {
+  padding: 0 30px;
+  color: white;
+}
+
+.searchListCardItem {
+  display: flex;
+}
+
+.searchListCardTitle {
+  width: 20%;
+  font-weight: bold;
+}
+
+.searchListCardBody{
+    width: 80%;
+}
