@@ -1,11 +1,12 @@
 .searchList {
   width: 40vw;
-  background: #00000025;
   margin: 20px;
 }
 
 .searchListCard {
   padding: 0 30px;
+  background: #00000025;
+  margin: 20px 0;
   color: white;
 }
 

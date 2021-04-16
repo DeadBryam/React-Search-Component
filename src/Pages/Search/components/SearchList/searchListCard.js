@@ -1,11 +1,13 @@
 import SearchListCardItem from "./searchListCardItem";
 
-export default function SearchListCard({ id, title, body }) {
+export default function SearchListCard({ id, name, username, email, phone, website}) {
   return (
     <div className="searchListCard" key={id}>
-      <SearchListCardItem title="ID" body={id}/>
-      <SearchListCardItem title="TITLE" body={title}/>
-      <SearchListCardItem title="BODY" body={body}/>
+      <SearchListCardItem title="NAME" body={name}/>
+      <SearchListCardItem title="USERNAME" body={username}/>
+      <SearchListCardItem title="EMAIL" body={email}/>
+      <SearchListCardItem title="PHONE" body={phone}/>
+      <SearchListCardItem title="WEBSITE" body={website}/>
     </div>
   );
 }

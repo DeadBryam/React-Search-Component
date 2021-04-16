@@ -14,11 +14,22 @@
   padding-left: 10px;
 }
 
-.searchButton {
-  height: 30px;
+.inputButtons {
+  height: 33px;
   border: none;
-  width: 70px;
+  width: 75px;
   border-radius: 3px;
   margin: 0 15px 0 0;
   font-weight: bold;
+  
+}
+
+.searchButton{
+  color: white;   
+  background: #8484F0;
+}
+
+.searchButton:disabled{
+  color: black;
+  background: gray;
 }

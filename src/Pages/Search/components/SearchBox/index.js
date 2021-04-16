@@ -5,22 +5,18 @@ import "./style.css";
 export default function SearchBox({ onSearch, onClose }) {
   const [searchInputText, setsearchInputText] = useState("");
 
-  const onInputSearchChange = (evt) => {
-    setsearchInputText(evt.target.value);
-
-    console.log(searchInputText);
-  };
-
+  const onInputSearchChange = (evt) => setsearchInputText(evt.target.value);
   const onCloseHandler = () => {
     onClose();
     setsearchInputText("");
   };
 
-  const onSearchHandler = () => searchInputText?.length > 0 && onSearch(searchInputText);
+  const onSearchHandler = () =>
+    searchInputText?.length > 0 && onSearch(searchInputText);
 
   return (
     <div className="searchBox">
-      <h2>SEARCH</h2>
+      <h2>SEARCH USER</h2>
       <div>
         <label htmlFor="InputSearch">
           <input
@@ -33,7 +29,7 @@ export default function SearchBox({ onSearch, onClose }) {
         <label htmlFor="Search">
           <button
             disabled={searchInputText?.length === 0}
-            className="searchButton"
+            className="inputButtons searchButton"
             onClick={onSearchHandler}
           >
             Search
@@ -41,7 +37,7 @@ export default function SearchBox({ onSearch, onClose }) {
         </label>
         {searchInputText?.length !== 0 && (
           <label htmlFor="Cancel">
-            <button className="searchButton" onClick={onCloseHandler}>
+            <button className="inputButtons cancelButton" onClick={onCloseHandler}>
               Cancel
             </button>
           </label>

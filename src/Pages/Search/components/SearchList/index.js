@@ -2,7 +2,6 @@ import SearchListCard from "./searchListCard";
 import "./style.css";
 
 export default function SearchList({ data }) {
-  console.log(data);
 
   return (
     <div className="searchList">
